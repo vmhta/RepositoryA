@@ -36,5 +36,11 @@ namespace SampleBankingApplication
             MagKnowledge.Git.AccountDetails.AccountWindow win = new MagKnowledge.Git.AccountDetails.AccountWindow();
             win.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MagKnowledge.Git.CreditDebit.CreditDebitAccount win = new MagKnowledge.Git.CreditDebit.CreditDebitAccount();
+            win.Show();
+        }
     }
 }

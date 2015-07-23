@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
         <Button Content="Check Balance" Padding="10" Margin="10" Grid.Row="0" Grid.Column="1" Click="Button_Click_1"></Button>
         <Button Content="Add New Account" Padding="10" Margin="10" Grid.Row="0" Grid.Column="0" Click="Button_Click"></Button>
-
+        <Button Content="Credit/Debit Amount" Padding="10" Margin="10" Grid.Row="1" Grid.Column="0" Click="Button_Click_2"></Button>
 
 
     </Grid>

@@ -75,6 +75,10 @@
     <Compile Include="BalanceDetails\BalanceWindow.xaml.cs">
       <DependentUpon>BalanceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CreditDebit\CreditDebitAccount.xaml.cs">
+      <DependentUpon>CreditDebitAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreditDebit\CreditDebitOperations.cs" />
     <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -88,6 +92,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AccountDetails\AccountWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CreditDebit\CreditDebitAccount.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
