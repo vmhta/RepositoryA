@@ -71,6 +71,10 @@
     <Compile Include="AccountInformation.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="BalanceDetails\BalanceOperations.cs" />
+    <Compile Include="BalanceDetails\BalanceWindow.xaml.cs">
+      <DependentUpon>BalanceWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +83,10 @@
     <Compile Include="UserDetail.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="BalanceDetails\BalanceWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="AccountDetails\AccountWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

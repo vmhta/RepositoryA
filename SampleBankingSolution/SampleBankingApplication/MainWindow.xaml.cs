@@ -24,6 +24,12 @@ namespace SampleBankingApplication
         {
             InitializeComponent();
         }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MagKnowledge.Git.BalanceDetails.BalanceWindow win = new MagKnowledge.Git.BalanceDetails.BalanceWindow();
+            win.Show();
+        }
+       
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
