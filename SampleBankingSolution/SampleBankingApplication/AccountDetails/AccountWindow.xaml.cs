@@ -10,25 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SampleBankingApplication
+namespace MagKnowledge.Git.AccountDetails
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AccountWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AccountWindow : Window
     {
-        public MainWindow()
+        public AccountWindow()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MagKnowledge.Git.AccountDetails.AccountWindow win = new MagKnowledge.Git.AccountDetails.AccountWindow();
-            win.Show();
+            bool response = AccountDetails.AccountOperations.AddAccountDetails(txtUserName.Text, txtPassword.Password, cmbAccountType.Text == "Saving" ? false : true);
+            if (response)
+                MessageBox.Show("Saved");
         }
     }
 }
